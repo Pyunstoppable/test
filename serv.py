@@ -14,7 +14,7 @@ def run_server(host,port):
     except KeyboardInterrupt:
         pass
 
-
+print(sfsf)
     server.close()
     loop.run_until_complete(server.wait_closed())
     loop.close()
