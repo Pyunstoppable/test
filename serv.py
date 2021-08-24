@@ -19,7 +19,6 @@ def run_server(host,port):
     loop.run_until_complete(server.wait_closed())
     loop.close()
 
-print('sdgsdg')
 di = {}
 
 class ClientServerProtocol(asyncio.Protocol):
@@ -97,5 +96,3 @@ class ClientServerProtocol(asyncio.Protocol):
 
         self.transport.write(resp.encode())
         #print('сервак возвращает:', (resp.encode()))
-
-
